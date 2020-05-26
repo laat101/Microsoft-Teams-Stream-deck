@@ -1,9 +1,11 @@
 ﻿$branch = "master"
 $files = @(
-    "https://raw.githubusercontent.com/laat101/wvd/$branch/TeamsStatus.ahk"
+    "https://raw.githubusercontent.com/laat101/Microsoft-Teams-Stream-deck/$branch/TeamsShortcutNavigation.ahk",
+    "https://raw.githubusercontent.com/laat101/Microsoft-Teams-Stream-deck/$branch/TeamsStatus.ahk"
+    
 )
 
-$installpath =  $env:LOCALAPPDATA + "\StreamDeckProject"
+$installpath =  $env:ProgramData + "\StreamDeckProject"
 if(-NOT(Test-Path $installpath )){
     New-Item -Path $installpath -ItemType Directory | Out-Null
 }
